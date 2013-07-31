@@ -54,7 +54,10 @@ public class CompoundWordExampleTest {
     }
 
     @Test
-    public void testFindLongestWord() throws Exception {
+    public void testFindLongestWordWithoutFile() throws Exception {
+        CompoundWordExample example = new CompoundWordExample();
+        example.findAllLongestWords();
+        example.findLongestTwoWords();
     }
 
     @Test
