@@ -1,7 +1,7 @@
 CompoundWordExample
 ===================
 
-I worked sporadically on this example over the course of a few days. I decided to write some tests as a way to mark what I needed to do next by writing tests on methods the expected results that I needed to write. I have included the tests but they are by no means robust or always the most useful but reflect how I solved this problem while doing other tasks so I have included them. I also chose to write my example in Java since I’ve been using primarily Java for the last year or so to do Android development.
+I worked sporadically on this example over the course of a few days. I decided to write some tests as a way to mark what I needed to do next by writing tests on methods the expected results that I needed to write. I have included the tests but they are by no means robust or always the most useful but reflect how I solved this problem while doing other tasks so I have included them. I also chose to write my example in Java since I’ve been using primarily Java for the last year or so to do Android development. I also checked it into my GitHub repo to more easily move between computers and track changes. It is here (https://github.com/JeffInMadison/CompoundWordExample.git) if anyone is interested.
 
 The stated goal was to find the largest word that can be constructed by concatenating smaller words in the file. Since I was going to be checking if a certain string was in the list often I read the entire list into a HashSet so that the search was an O(1) search cost. It means keeping a copy of the list in memory but the other stated goal is speed not space efficiency.
 
@@ -11,6 +11,8 @@ If the goal was only the largest word (or two) you could also shortcut the numbe
 be done by sorting a simple ArrayList.
 
 Since there wasn't any comment of what should happen if there were multiple results of the same longest length I didn't really address this case. Currently if we encounter results with the same length the fist ones saved becomes the longest. (The sorted ArrayList in my example code sorts strings of the same length alphabetically.)
+
+The processing on my i7 is pretty fast, the times are in milliseconds, but there could be room for improvement with processing in in parallel using multiple threads. I didn't take the time to make the example use more processors through threading but it would be the next logical step to speed up processing.
 
 Jeff Alexander
 jeff@alexandermail.net
