@@ -1,3 +1,5 @@
+For anyone looking at this sample. I applied (and got) a job with an employer that wanted me to solve this problem. They were looking for someone with the ability to use git so I used github in my submission. I could probably take it down but I've left it up for posterity.
+
 CompoundWordExample
 ===================
 
